@@ -3,78 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Строительная компания «Визитка»</title>
+  <title>Batumi View — аренда апартаментов у моря</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    body, html {
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      min-height: 100vh;
     }
     header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px;
       text-align: center;
+      padding: 30px 20px;
     }
-    .container {
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+    header p {
+      font-size: 18px;
+      margin: 10px 0 0;
+    }
+    .content {
       max-width: 1000px;
-      margin: 0 auto;
+      margin: 20px auto;
       padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
     }
-    h1, h2 {
-      margin-top: 0;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
     }
-    .services {
+    .description {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .photos {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 10px;
+      justify-content: center;
     }
-    .service {
-      background: #fff;
+    .photos img {
+      width: 300px;
       border-radius: 8px;
-      padding: 15px;
-      flex: 1 1 calc(33.333% - 20px);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     }
-    .service h3 {
-      margin-top: 0;
-      color: #2980b9;
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+      gap: 10px;
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .buttons a:hover {
+      background: #2980b9;
     }
     footer {
-      background: #2c3e50;
-      color: #fff;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-    .contacts {
-      margin: 20px 0;
-    }
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media(max-width: 768px) {
-      .service {
-        flex: 1 1 100%;
-      }
+      margin: 30px 0 10px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
+<div class="overlay">
   <header>
-    <h1>Строительная компания «Визитка»</h1>
-    <p>Качественное строительство и ремонт под ключ</p>
+    <h1>Batumi View — апартаменты у моря</h1>
+    <p>Видовые студии в Батуми в 20 метрах от моря</p>
   </header>
 
-  <div class="container">
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-      <p>Email: <a href="mailto:info@stroivizitka.ru">info@stroivizitka.ru</a></p>
+  <div class="content">
+    <h2>Описание</h2>
+    <div class="description">
+      <p>Предлагаются к продаже и аренде несколько, одних из самых видовых, больших студий (46 кв.м) в лучшем комплексе г. Батуми — <strong>Batumi View</strong>, в 20 метрах от моря, набережной и парка на новом бульваре!</p>
+      <p>Апартаменты расположены на высоких этажах, из которых открывается прямой и изумительный вид на <strong>НАБЕРЕЖНУЮ, МОРЕ и ПАРК</strong>!</p>
+      <p>Укомплектованы всем необходимым для комфортного проживания и отдыха. В комплексе — крытый паркинг и открытая парковка (за доп. плату). Возможна длинная аренда вне сезон!</p>
+    </div>
+
+    <h2>Фотографии</h2>
+    <div class="photos">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-900000012/0cdb6c9501374e7394da8db2e3c8f2c0.jpg?im_w=1200" alt="Апартаменты">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-900000012/f25dcae5b5f94ef4b1ec78c1a4b3cdb1.jpg?im_w=1200" alt="Вид с балкона">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-900000012/073cfcd490924c9c8e4d5852238e021e.jpg?im_w=1200" alt="Интерьер студии">
+    </div>
+
+    <div class="buttons">
+      <a href="tel:+995595535999">Позвонить: +995 595 53 59 99</a>
+      <a href="https://youtu.be/IrvTZChFW5Y" target="_blank">Видео-обзор</a>
+      <a href="https://airbnb.ru/h/batumiview8" target="_blank">Апартаменты №8 на Airbnb</a>
+      <a href="https://airbnb.ru/h/batumiview9" target="_blank">Апартаменты №9 на Airbnb</a>
+      <a href="https://wa.me/995595535999" target="_blank">Написать в WhatsApp</a>
+      <a href="viber://chat?number=%2B995595535999">Написать в Viber</a>
+      <a href="https://t.me/+995595535999" target="_blank">Написать в Telegram</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Batumi View. Все права защищены.
+  </footer>
+</div>
+
+</body>
+</html>
